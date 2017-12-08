@@ -7,10 +7,10 @@ RUN apt-get update
 RUN apt-get install git -y
 
 # Create a folder to clone the source code
-RUN mkdir repositories
+RUN mkdir src
 
 # Set the working directory
-WORKDIR repositories
+WORKDIR src
 
 # Clone the source code with git
 RUN git clone https://github.com/benkauffman/docker_OwinApi.git
