@@ -1,5 +1,6 @@
 # Use the microsoft/aspnet image as a base.
-FROM microsoft/aspnet
+# FROM microsoft/aspnet
+FROM mono
 
 # Run updates and install git
 RUN apt-get update
